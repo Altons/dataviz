@@ -2537,7 +2537,6 @@
       </section>
 
 
-<!-- ======================================================================= -->
 
 
 
@@ -2547,85 +2546,6 @@
 
 
 
-<!-- ============================= POSTER SECTION ========================== -->
-
-
-<!-- Croping image: the goal is to have a 800 x 400 -->
-<!-- Change image size o have heght = 400: convert poster_small.png -resize 800x400 poster_xsmall.png -->
-<!-- Add white space on the side to have the good size: convert -size 800x400 xc:white poster_xsmall.png  -gravity center -composite output.png -->
-<!-- OR Crop images with convert alisasinger.jpg -crop 1000x350+50+10  titi.png -->
-
-  <!-- see https://www.w3schools.com/howto/howto_js_slideshow.asp for carousel -->
-    <section id="poster" class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Poster</h2>
-            <h3 class="section-subheading text-muted">The 'Data to Viz' project is available in a high quality printed poster. See our <a href="poster.html">online shop</a> to support the project.</h3>
-          </div>
-        </div>
-        <div class="slideshow-container">
-          <div class="mySlides">
-            <img src="img/poster/poster_mockup_croped.jpg" style="width:100%">
-          </div>
-          <div class="mySlides">
-            <a data-toggle="modal" href="#poster_full"><img src="img/poster/poster_800_400.png" style="width:100%"></a>
-          </div>
-          <div class="mySlides">
-            <img src="img/poster/poster_zoom_800_400.png" style="width:100%">
-          </div>
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-        <br>
-        <div style="text-align:center">
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="poster.html">Buy a poster</a>
-          <a class="btn btn-primary btn-xl text-uppercase" data-toggle="modal" href="#poster_full">See it full screen</a>
-        </div>
-      </div>
-    </section>
-   
-
-
-
-
-    <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
-
-
-<!-- ======================================================================= -->
 
 
 
@@ -2634,84 +2554,6 @@
 
 
 
-<!-- ========================== ABOUT SECTION ============================== -->
-
-    <section  id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-uppercase">About the project</h2>
-            <p class="large text-muted">‘From Data to Viz’ is a classification of chart types based on input data format. It comes in the form of a decision tree leading to a set of potentially appropriate visualizations to represent your dataset. <a href="about.html">Read more</a>.</p>
-          </div>
-          <div class="col-lg-10 mx-auto text-center">
-             <div style="text-align:center">
-              <a class="btn btn-primary btn-l text-uppercase js-scroll-trigger" href="about.html#toolsanchor">Tools</a>
-              <a class="btn btn-primary btn-l text-uppercase js-scroll-trigger" href="about.html#acknowledgmentanchor">Acknowledgment</a>
-              <a class="btn btn-primary btn-l text-uppercase js-scroll-trigger" href="about.html#historyanchor">History</a>
-              <a class="btn btn-primary btn-l text-uppercase js-scroll-trigger" href="#contact">Feedback</a>
-            </div>
-          </div>
-          <div class="col-lg-8 mx-auto text-center">
-            <br>
-            <p class="large text-muted">This website has been developed by two friends from the south of France in their spare time. Feel free to <a href="#contact">drop us a word</a> if the project helped you or for any feedback. Or even better, hire us!</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-2"></div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <a href="https://www.linkedin.com/in/yan-holtz-2477534a/"><img class="mx-auto rounded-circle" src="img/team/YH_pic_square.png" alt=""></a>
-              <a href="https://www.linkedin.com/in/yan-holtz-2477534a/"><h4>Yan Holtz</h4></a>
-              <p class="text-muted">Data analyst</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="https://twitter.com/R_Graph_Gallery">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://github.com/holtzy">
-                    <i class="fa fa-github"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/yan-holtz-2477534a/">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <a href="http://www.conor.fr"><img class="mx-auto rounded-circle" src="img/team/ConorHealy.jpg" alt=""></a>
-              <a href="http://www.conor.fr"><h4>Conor Healy</h4></a>
-              <p class="text-muted">Designer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="http://www.conor.fr/indexEN.html">
-                    <i class="fa fa-home"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="http://www.conor.fr/indexEN.html">
-                    <i class="fa fa-envelope"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/conor-healy-b0299810a/">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-1"></div>
-        </div>
-      </div>
-    </section>
-
-<!-- ======================================================================= -->
 
 
 
@@ -2719,73 +2561,14 @@
 
 
 
-<!-- ======================= CONTACT SECTION =============================== -->
-
-
-
-  <section id="contact" class="bg-light">
-     <div class="container">
-       <div class="row">
-         <div class="col-lg-2 text-center"></div>
-         <div class="col-lg-8 text-center">
-           <br><br><br>
-           <h2 class="section-heading text-uppercase" style="color: black">Contact</h2>
-           <p>From Data to Viz is currently in beta version and any feedback is highly encouraged. You can open an issue on <a href="https://github.com/holtzy/data_to_viz">Github</a>, drop us a message on <a href="https://twitter.com/R_Graph_Gallery">Twitter</a>, or send us an email at <a href="mailto:yan.holtz.data@gmail.com">yan.holtz.data@gmail.com</a>.</p>
-           <div style="text-align:center">
-              <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://github.com/holtzy/data_to_viz">Github</a>
-              <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://twitter.com/R_Graph_Gallery">Twitter</a>
-            </div>
-
-         </div>
-       </div>
-    </div>
-  </section>
 
 
 
 
 
-<!-- ======================= FOOTER SECTION ================================ -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <span class="copyright">Copyright &copy; from Data to Viz 2018</span>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="https://twitter.com/R_Graph_Gallery">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://github.com/holtzy">
-                  <i class="fa fa-github"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/yan-holtz-2477534a/">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
 
-<!-- ======================================================================= -->
+
+
 
 
 
