@@ -2,7 +2,7 @@
 <br>
 <hr>
 
-[data-to-viz.com](https://www.data-to-viz.com)
+[DataViZ](https://itsmecevi.github.io/dataviz/)
 
 <br>
 
@@ -30,9 +30,6 @@ The project is composed by several sections:
 
 
 
-Acknowledgment
------
-See a complete list of acknowledgment [here](https://www.data-to-viz.com/about.html#acknowledgmentanchor)
 
 
 
