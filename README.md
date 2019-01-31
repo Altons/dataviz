@@ -6,9 +6,6 @@
 
 <br>
 
-Overview
------
-From [Data to Viz.com](https://www.data-to-viz.com) is a website aiming to help in your chart decision. It classifies most of the chart types based on their input data format. It comes in the form of a decision tree leading to a set of potentially appropriate visualizations to represent your dataset.
 
 
 <br>
@@ -24,21 +21,14 @@ The project is composed by several sections:
 
 <br>
 
-Poster
------
-The decision tree offered in the website are also avilable in a [high quality poster](https://www.data-to-viz.com/poster.html). Buy it to support the project!
-
-<img align="center" src="img/poster/poster_screenshot.png" width="800">
-
-<br>
-
-
-Feedbacks
------
-From [Data to Viz.com](https://www.data-to-viz.com) is currently in beta version and any feedback is highly encouraged. You can fill an [issue](https://github.com/holtzy/data_to_viz/issues) on Github, drop us a message on [Twitter](https://twitter.com/R_Graph_Gallery), or send an email pasting yan.holtz.data with gmail.com.
 
 
 <br>
+
+
+
+
+
 
 Acknowledgment
 -----
